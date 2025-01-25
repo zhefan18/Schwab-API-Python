@@ -3,6 +3,7 @@ This file contains examples for every api call.
 """
 
 from dotenv import load_dotenv
+from pathlib import Path
 from time import sleep
 import schwabdev
 import datetime
@@ -12,7 +13,8 @@ import os
 
 def main():
     # place your app key and app secret in the .env file
-    load_dotenv()  # load environment variables from .env file
+    dotenv_path = Path('/home/zfan/schwab_api_secret/.env')
+    load_dotenv(dotenv_path = dotenv_path)  # load environment variables from .env file
 
     # set logging level
     logging.basicConfig(level=logging.INFO)
