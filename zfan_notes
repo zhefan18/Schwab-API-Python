@@ -1,0 +1,15 @@
+Some important notes from zfan:
+
+* To install this API, I used this command
+  ** pip install schwabdev --break-system-packages
+  ** This is because without --break-system-packages it would not allow me to install it. And the other workarounds seem complicated to me.
+
+* Then from example dir, I ran python3 api_demo.py
+  ** Note that in the last step, it will give me a link and ask me to connect and authorize it.
+  ** From that link, it will send me to the callback url 127.0.0.1, and the browser will tell me that 127.0.0.1 cannot be connected.
+  ** But this is OK! I just need to paste the https://127.0.0.1/?code=XXXXXXXXXXXXXXXXXXXXXX link to the running python program, and it will continue. And everything works from here.
+
+* I also made a change so that .env is from a separate dir, so we won't mistakenly check it into github. 
+    dotenv_path = Path('/home/zfan/schwab_api_secret/.env')
+    load_dotenv(dotenv_path = dotenv_path)
+https://github.com/tylerebowers/Schwabdev/compare/main...zhefan18:Schwab-API-Python:main
