@@ -1,5 +1,11 @@
 Some important notes from zfan:
 
+* Docs: https://tylerebowers.github.io/Schwabdev/
+
+* Remember that you have two types of accounts: API account, and Stock account.
+  ** API account was my gmail address.  It has the API secrets, which you copy and paste and store in .env file.
+  ** Stock accounts have your cash and stocks.  When you run your python program, you will need to authenticate to sign into your stock account, of course.
+
 * To install this API, I used this command
   ** pip install schwabdev --break-system-packages
   ** This is because without --break-system-packages it would not allow me to install it. And the other workarounds seem complicated to me.
