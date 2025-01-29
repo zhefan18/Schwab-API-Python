@@ -31,6 +31,8 @@ class Client:
         :type update_tokens_auto: bool
         """
 
+        print("Hello, ZippyFisher branch!!!")
+
         if timeout <= 0:
             raise Exception("Timeout must be greater than 0 and is recommended to be 5 seconds or more.")
 
